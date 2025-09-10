@@ -22,12 +22,12 @@ const server = http.createServer((request, response) => {
                 email: 'vreds433@gmail.com'
             })
 
-            return response.end('Crição de usuario')
+            return response.writeHead(201).end()
     } 
 
     
 
-    return response.end("Hello teste")
+    return response.writeHead(404).end('Not Found')
 })
 
 
